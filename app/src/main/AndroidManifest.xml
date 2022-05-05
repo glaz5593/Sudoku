@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.moshe.glaz.sudoku">
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!--
+    Variant: debugAndroidTest
+    Config: debug
+    Store: C:\Users\mosheg\.android\debug.keystore
+    Alias: AndroidDebugKey
+    MD5: 75:90:61:E2:B3:CD:F9:2A:F1:32:1C:51:E9:FA:77:D9
+    SHA1: E3:F9:56:4B:A9:C0:30:E3:1D:D4:77:9A:7A:4D:BD:B2:8C:36:9F:C4
+    SHA-256: BF:F4:E8:4A:0A:79:EE:50:88:54:C5:AF:6F:4A:91:D8:53:88:B0:B1:CC:38:91:1F:77:E3:13:6B:B2:00:FE:52
+    Valid until: Thursday, November 23, 2051
+    -->
+
+    <application
+        android:name=".app.AppBase"
+        android:allowBackup="true"
+        android:icon="@drawable/logo_1200"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar">
+        <activity
+            android:name=".ui.activities.SudokuActivity2"
+            android:exported="true" >
+
+        </activity>
+        <activity
+            android:name=".ui.activities.SudokuActivity"
+            android:exported="false" />
+
+        <service
+            android:name=".services.TrackingService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity
+            android:name=".ui.activities.UsersActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activities.SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.activities.GameActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activities.RegistrationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activities.LoginActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.activities.MainActivity"
+            android:exported="true" />
+    </application>
+
+</manifest>
