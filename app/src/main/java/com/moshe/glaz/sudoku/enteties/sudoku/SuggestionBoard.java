@@ -33,7 +33,7 @@ public class SuggestionBoard implements Serializable {
     }
  
     public boolean has(int x, int y, int value) {
-        return values.get((y * 9) + x).values.get(value).value;
+        return values.get((y * 9) + x).values.get(value).isTrue();
     }
 
     public void add(int x, int y, int value) {
@@ -77,7 +77,7 @@ public class SuggestionBoard implements Serializable {
 
         int i=0;
         for(BooleanVal b : values.get((y * 9) + x).values) {
-            if (b.value) res.add(i);
+            if (b.isTrue()) res.add(i);
             i++;
         }
 

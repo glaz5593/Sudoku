@@ -5,12 +5,15 @@ import android.util.AttributeSet;
 import android.util.TypedValue;
 import android.widget.CompoundButton;
 
+import com.moshe.glaz.sudoku.enteties.Position;
+
 public class CellTextView extends CompoundButton
 {
     private static final float THRESHOLD = 0.5f;
 
-    private enum Mode { Width, Height, Both, None }
 
+    private enum Mode { Width, Height, Both, None }
+    private Position position;
     private int minTextSize = 1;
     private int maxTextSize = 1000;
 
@@ -38,6 +41,13 @@ public class CellTextView extends CompoundButton
         setAllCaps(false);
     }
 
+    public Position getPosition() {
+        return position;
+    }
+
+    public void setPosition(Position position) {
+        this.position = position;
+    }
 
     private void resizeText() {
         if (getWidth() <= 0 || getHeight() <= 0)

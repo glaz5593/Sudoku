@@ -1,6 +1,5 @@
 package com.moshe.glaz.sudoku.managers;
 
-import com.moshe.glaz.sudoku.enteties.User;
 import com.moshe.glaz.sudoku.enteties.sudoku.Game;
 import com.moshe.glaz.sudoku.enteties.sudoku.Player;
 
@@ -49,8 +48,8 @@ public class SudokuManager {
         res.baseBoard = DataSourceManager.getInstance().getSudokuDataSource(res.dataSourceId).baseValues;
         res.user1=new Player();
         res.user2=new Player();
-        res.user1.uid=user1;
-        res.user2.uid=user2;
+        res.user1.uid =user1;
+        res.user2.uid =user2;
         res.startDate=new Date();
 
         FirebaseManager.getInstance().addGame(res,listener);

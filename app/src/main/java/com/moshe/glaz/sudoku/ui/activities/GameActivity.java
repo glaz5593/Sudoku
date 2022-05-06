@@ -12,7 +12,6 @@ import com.moshe.glaz.sudoku.R;
 import com.moshe.glaz.sudoku.enteties.sudoku.Game;
 import com.moshe.glaz.sudoku.enteties.User;
 import com.moshe.glaz.sudoku.managers.DataSourceManager;
-import com.moshe.glaz.sudoku.managers.GameLogicManager;
 import com.moshe.glaz.sudoku.managers.LogicManager;
 import com.moshe.glaz.sudoku.ui.board.*;
 

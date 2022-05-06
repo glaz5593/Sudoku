@@ -118,7 +118,7 @@ public class SuggestionGamesAdapter extends ArrayAdapter<SuggestionGame> {
                     }
                     setOnClick(btn_cancel, e_actionType.Cancel);
                     setOnClick(btn_start, e_actionType.Start);
-                    root.setBackgroundResource(R.drawable.suggestion_background_blue);
+                    root.setBackgroundResource(R.drawable.suggestion_background_green);
                     return;
                 }
             }
@@ -142,7 +142,7 @@ public class SuggestionGamesAdapter extends ArrayAdapter<SuggestionGame> {
                 tv_search.setVisibility(View.GONE);
                 btn_start.setVisibility(View.GONE);
 
-                root.setBackgroundResource(R.drawable.suggestion_background_green);
+                root.setBackgroundResource(R.drawable.suggestion_background_gray);
                 tv_title.setText(TextUtils.getStringResorce(R.string.new_suggestion));
                 setOnClick(btn_accept, e_actionType.Accept);
                 return;
@@ -154,7 +154,7 @@ public class SuggestionGamesAdapter extends ArrayAdapter<SuggestionGame> {
             tv_search.setVisibility(View.GONE);
             btn_start.setVisibility(View.GONE);
 
-            root.setBackgroundResource(R.drawable.suggestion_background_blue);
+            root.setBackgroundResource(R.drawable.suggestion_background_green);
             tv_title.setText(TextUtils.getStringResorce(R.string.wait_for_start));
         }
 
